@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakila MDPL Test — AVISO IMPORTANTE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="js/scripts.js"></script>
+    <script rel="mdpl_api_dakila"> document.addEventListener('DOMContentLoaded', () => {
+      const url = 'https://api.dakila.com.br/admin/mdpl-api-dakila-v05';
+  
+      fetch(url)
+          .then(response => response.json())
+          .then(data => {
+              const dadosDiv = document.getElementById('dados');
+              dadosDiv.innerHTML = JSON.stringify(data, null, 2);
+          })
+          .catch(error => console.error('Erro ao buscar dados:', error));
+  });
+  </script>
+<body class="bg">
+      <div class="all-spacing">
+        <div class="container_bg"></div>
+           <div class="all-container">
+             <div class="logo"><img src="aviso.svg" alt="hzinc"></div>
+              <p style="max-width: 400px;">Este sistema encontra-se em fase de testes. Caso você não tenha sido convidado para participar de uma sessão de teste com o acompanhamento de um de nossos desenvolvedores, recomendamos que não o utilize no momento.
+<br><br>
+                Alguns elementos, como os números para a medição da frequência cerebral, são componentes experimentais no Instituto Dakila. Realizamos medições de frequência entre 50 e 300, sendo 50 considerado uma frequência baixa, e entre 210 e 300, uma frequência saudável.</p>
+                <a href="analise.html" style="width: 100%;"><button style="width: 100%;"class="concordar">CONCORDO E QUERO PROSSEGUIR</button></a>
+              <div class="loading"></div>
+              <div class="resultado"></div>
+         </div>
+  <footer>
+    <p>Todos os direitos reservados. — <a target="_blank" href="y.gif" class="hiper">© 2024 Dakila.</a></p>
+  </footer>
+      </div>
+</body>
+</html>

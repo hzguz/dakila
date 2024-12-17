@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakila MDPL Test — REALIZAR ANÁLISE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="js/scripts.js"></script>
+    <script rel="mdpl_api_dakila"> document.addEventListener('DOMContentLoaded', () => {
+      const url = 'https://api.dakila.com.br/admin/mdpl-api-dakila-v05';
+  
+      fetch(url)
+          .then(response => response.json())
+          .then(data => {
+              const dadosDiv = document.getElementById('dados');
+              dadosDiv.innerHTML = JSON.stringify(data, null, 2);
+          })
+          .catch(error => console.error('Erro ao buscar dados:', error));
+  });
+  </script>
+<body>
+      <div class="all-spacing">
+        <div class="container_bg"></div>
+           <div class="all-container">
+             <div class="logo"><img src="https://www.dakila.com.br/wp-content/uploads/2022/02/logo-dakila-branco-rodape-1.svg" alt="hzinc"></div>
+              <p style="max-width: 400px;">Gostaria de saber um <span style="font-weight: 700;">valor apróximado da sua frequência cerebral?</span> Estamos testando nosso <span style="font-weight: 700;">MDPL</span> para aplicações diretas, como análise em tempo real de seu estado físico.</p>
+              <button class="mdpl-start">COMEÇAR ANÁLISE</button>
+              <div class="loading"></div>
+              <div class="resultado"></div>
+         </div>
+  <footer>
+    <p>Todos os direitos reservados. — <a target="_blank" href="y.gif" class="hiper">© 2024 Dakila.</a></p>
+  </footer>
+      </div>
+</body>
+</html>

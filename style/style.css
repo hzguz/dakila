@@ -1,0 +1,142 @@
+body{
+        background: url(https://www.dakila.com.br/wp-content/uploads/2021/05/inicio_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      margin: 0;
+      flex-direction: column;
+      color: white;
+      font-family: inter;
+    }
+    .logo img{
+        width: 290px;
+    }
+
+    h3{
+      font-weight: 400;
+    }
+
+    .all-container {
+        background-color: rgba(0, 0, 0, 0.384);
+        backdrop-filter: blur(16px);
+        padding: 64px 120px 64px 120px;
+        display: grid;
+        grid-gap: 32px;
+        border-radius: 16px;
+    }
+
+
+
+p {
+  color: white;
+  font-family: inter ;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+
+.mdpl-start{
+  background-color: white; /* Cor de fundo branca */
+  color: black; /* Texto preto */
+  border: 2px solid black; /* Borda preta */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave para o hover */
+  font-family: inter;
+  font-weight: 600;
+}
+
+.mdpl-start:hover {
+  background-color: #d1d1d1; /* Cor de fundo ao passar o mouse */
+}
+
+.concordar{
+  background-color: #C02A2A; /* Cor de fundo branca */
+  color: WHITE; /* Texto preto */
+  border: NONE;
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave para o hover */
+  font-family: inter;
+  font-weight: 600;
+}
+
+.concordar:hover {
+  background-color: #912020; /* Cor de fundo ao passar o mouse */
+}
+
+.mdpl-start, .resultado {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.resultado {
+  display: none;
+}
+.loading {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+    footer{
+      font-family: inter;
+      font-size: 13px;
+      font-weight: 300;
+      align-self: center;
+      margin-top: 32px;
+      bottom: 0;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 10px 10px 0 0;
+    }
+
+    a {
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit;        /* Herda a cor do texto ao redor */
+    background: none;      /* Remove qualquer background */
+    border: none;          /* Remove borda, se houver */
+    outline: none;         /* Remove contorno, se houver */
+}
+
+.hiper:hover {
+    transition: all 0.6s;
+    text-shadow: 0 0 6px #ffffff33, 0 0 10px #ffffff8f, 0 0 15px #ffffff9f;
+    font-weight: 400;
+}
+
+.hiper {
+    transition: all 0.6s;
+
+}
+
+.container-bg {
+  height: 59px;
+  width: 30px;
+}
+
+.all-spacing {
+     display: flex;
+     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
